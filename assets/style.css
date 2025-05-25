@@ -1,0 +1,9 @@
+/* Extra CSS for JS filtering (can be expanded as needed) */
+.hidden {
+  display: none !important;
+}
+.filter-highlight {
+  outline: 2px solid #b6e04a;
+  background: #fdfff3;
+}
+// ...[existing code]...
