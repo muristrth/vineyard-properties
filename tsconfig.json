@@ -2,18 +2,18 @@
   "compilerOptions": {
     "target": "ES2020",
     "lib": ["DOM", "DOM.Iterable", "ES2020"],
-    "allowJs": true, // Allow JavaScript files to be imported
+    "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true, // Allows `import * as React from 'react'`
-    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "module": "esnext",
-    "moduleResolution": "bundler", // Use 'bundler' for Next.js 13+ (or 'node' if issues persist)
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve", // Keep this as 'preserve' for Next.js
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -21,9 +21,16 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"] // Crucial for resolving @/components, @/app etc.
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
